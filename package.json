@@ -1,0 +1,19 @@
+{
+  "name": "ambev-cy-cucumber",
+  "version": "1.0.0",
+  "description": "front and back test for ambev",
+  "scripts": {
+    "cy:open": "npx cypress open"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "cypress": "^14.2.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/features"
+  }
+}
